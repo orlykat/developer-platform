@@ -6,13 +6,13 @@ metadata:
 spec:
   project: default
 
-source:
-  repoURL: https://github.com/orlykat/developer-platform.git
-  targetRevision: main
-  path: platform/helm/app-template
-  helm:
-    valueFiles:
-      - ../../../apps/demo/values.yaml
+  source:
+    repoURL: https://github.com/orlykat/developer-platform.git
+    targetRevision: main
+    path: platform/helm/app-template
+    helm:
+      valueFiles:
+        - ../../../apps/demo/values.yaml
 
   destination:
     server: https://kubernetes.default.svc
