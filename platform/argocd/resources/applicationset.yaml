@@ -13,7 +13,7 @@ spec:
     - git:
         repoURL: https://github.com/orlykat/developer-platform.git
         revision: main
-        requeueAfterSeconds: 30
+        requeueAfterSeconds: 20
         files:
           - path: apps/*/values.yaml
 
