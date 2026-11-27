@@ -1,0 +1,12 @@
+replicaCount: 2
+image:
+  repository: nginx
+  tag: 1.28-alpine
+containerPort: 80
+probes:
+  readiness:
+    enabled: true
+    path: /
+  liveness:
+    enabled: true
+    path: /
